@@ -55,14 +55,22 @@ export function Header() {
         </nav>
 
         <div className="ml-auto flex items-center gap-1">
-          <div className="hidden md:flex relative">
+          <div className="hidden xl:flex relative">
             <Search className="absolute left-2.5 top-1/2 size-3.5 -translate-y-1/2 text-muted-foreground" />
             <Input
               type="search"
               placeholder={tHeader("search")}
-              className="h-8 w-[200px] lg:w-[260px] pl-8 text-xs"
+              className="h-8 w-[220px] pl-8 text-xs"
             />
           </div>
+          <Button
+            variant="ghost"
+            size="icon-sm"
+            aria-label={tHeader("search")}
+            className="xl:hidden text-muted-foreground hover:text-foreground"
+          >
+            <Search className="size-4" />
+          </Button>
 
           <Button
             variant="ghost"

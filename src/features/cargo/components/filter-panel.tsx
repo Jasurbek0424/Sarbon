@@ -161,7 +161,7 @@ export function FilterPanel() {
           <span>{t("favoritesOnly")}</span>
         </label>
 
-        <div className="ml-auto flex items-center gap-2">
+        <div className="w-full sm:w-auto sm:ml-auto flex items-center gap-2">
           <Select
             value={state.sort}
             onValueChange={(v) =>
@@ -171,8 +171,8 @@ export function FilterPanel() {
               })
             }
           >
-            <SelectTrigger className="h-8 w-[200px] text-xs">
-              <ArrowDownUp className="size-3 text-muted-foreground" />
+            <SelectTrigger className="h-8 w-full sm:w-[220px] text-xs">
+              <ArrowDownUp className="size-3 text-muted-foreground shrink-0" />
               <SelectValue />
             </SelectTrigger>
             <SelectContent align="end">

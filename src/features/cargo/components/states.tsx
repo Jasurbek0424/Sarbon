@@ -8,57 +8,82 @@ import { Skeleton } from "@/components/ui/skeleton";
 
 export function LoadingState({ rows = 8 }: { rows?: number }) {
   return (
-    <div className="rounded-xl border border-border bg-card overflow-hidden">
-      <div className="grid grid-cols-[1.1fr_1.1fr_0.9fr_1fr_1.3fr_1fr_84px] gap-3 border-b border-border/60 bg-surface-sunken px-4 py-2.5">
-        {Array.from({ length: 7 }).map((_, i) => (
-          <Skeleton key={i} className="h-3 w-16" />
-        ))}
+    <div className="flex flex-col gap-4">
+      {/* Desktop skeleton */}
+      <div className="hidden lg:block rounded-xl border border-border bg-card overflow-hidden">
+        <div className="grid grid-cols-[1.1fr_1.1fr_0.9fr_1fr_1.3fr_1fr_84px] gap-3 border-b border-border/60 bg-surface-sunken px-4 py-2.5">
+          {Array.from({ length: 7 }).map((_, i) => (
+            <Skeleton key={i} className="h-3 w-16" />
+          ))}
+        </div>
+        <div className="divide-y divide-border/60">
+          {Array.from({ length: rows }).map((_, i) => (
+            <motion.div
+              key={i}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: i * 0.03 }}
+              className="grid grid-cols-[1.1fr_1.1fr_0.9fr_1fr_1.3fr_1fr_84px] gap-3 px-4 py-3.5"
+            >
+              <SkeletonCell />
+              <SkeletonCell />
+              <div className="space-y-1.5">
+                <Skeleton className="h-3.5 w-16" />
+                <Skeleton className="h-2.5 w-12" />
+              </div>
+              <div className="space-y-1.5">
+                <Skeleton className="h-3 w-24" />
+                <Skeleton className="h-2.5 w-20" />
+              </div>
+              <div className="space-y-1.5">
+                <Skeleton className="h-3 w-32" />
+                <Skeleton className="h-2.5 w-24" />
+              </div>
+              <SkeletonCell avatarSize="size-7" />
+              <div />
+            </motion.div>
+          ))}
+        </div>
       </div>
-      <div className="divide-y divide-border/60">
-        {Array.from({ length: rows }).map((_, i) => (
+
+      {/* Tablet + mobile skeleton */}
+      <div className="lg:hidden flex flex-col gap-3">
+        {Array.from({ length: Math.min(rows, 6) }).map((_, i) => (
           <motion.div
             key={i}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: i * 0.03 }}
-            className="grid grid-cols-[1.1fr_1.1fr_0.9fr_1fr_1.3fr_1fr_84px] gap-3 px-4 py-3.5"
+            className="rounded-xl border border-border bg-card p-4 space-y-3"
           >
-            <div className="flex items-center gap-2">
-              <Skeleton className="size-5 rounded-full" />
-              <div className="space-y-1.5">
-                <Skeleton className="h-3 w-16" />
-                <Skeleton className="h-2.5 w-20" />
-              </div>
+            <div className="flex items-center justify-between">
+              <Skeleton className="h-5 w-20 rounded-full" />
+              <Skeleton className="h-5 w-12 rounded-md" />
             </div>
             <div className="flex items-center gap-2">
-              <Skeleton className="size-5 rounded-full" />
-              <div className="space-y-1.5">
-                <Skeleton className="h-3 w-16" />
-                <Skeleton className="h-2.5 w-20" />
-              </div>
+              <Skeleton className="h-4 w-24" />
+              <Skeleton className="h-4 w-4 rounded-full" />
+              <Skeleton className="h-4 w-24" />
             </div>
-            <div className="space-y-1.5">
-              <Skeleton className="h-3.5 w-16" />
-              <Skeleton className="h-2.5 w-12" />
+            <div className="flex items-center justify-between pb-3 border-b border-border/50">
+              <Skeleton className="h-4 w-32" />
+              <Skeleton className="h-5 w-20" />
             </div>
-            <div className="space-y-1.5">
-              <Skeleton className="h-3 w-24" />
-              <Skeleton className="h-2.5 w-20" />
-            </div>
-            <div className="space-y-1.5">
-              <Skeleton className="h-3 w-32" />
-              <Skeleton className="h-2.5 w-24" />
-            </div>
-            <div className="flex items-center gap-2">
-              <Skeleton className="size-7 rounded-full" />
-              <div className="space-y-1.5">
-                <Skeleton className="h-3 w-16" />
-                <Skeleton className="h-2.5 w-20" />
-              </div>
-            </div>
-            <div />
+            <SkeletonCell />
           </motion.div>
         ))}
+      </div>
+    </div>
+  );
+}
+
+function SkeletonCell({ avatarSize = "size-5" }: { avatarSize?: string }) {
+  return (
+    <div className="flex items-center gap-2">
+      <Skeleton className={`${avatarSize} rounded-full`} />
+      <div className="space-y-1.5">
+        <Skeleton className="h-3 w-16" />
+        <Skeleton className="h-2.5 w-20" />
       </div>
     </div>
   );

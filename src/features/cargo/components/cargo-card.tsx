@@ -12,7 +12,7 @@ import { CargoStatusPill } from "./status-pill";
 
 export function CargoCardList({ items }: { items: Cargo[] }) {
   return (
-    <ul className="md:hidden flex flex-col gap-3">
+    <ul className="lg:hidden flex flex-col gap-3">
       {items.map((cargo, index) => (
         <li
           key={cargo.id}

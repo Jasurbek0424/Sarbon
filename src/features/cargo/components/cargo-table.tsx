@@ -16,7 +16,7 @@ export function CargoTable({ items }: { items: Cargo[] }) {
   const t = useTranslations("table");
 
   return (
-    <div className="hidden md:block overflow-hidden rounded-xl border border-border bg-card shadow-[0_1px_0_oklch(0_0_0_/_0.02)]">
+    <div className="hidden lg:block overflow-hidden rounded-xl border border-border bg-card shadow-[0_1px_0_oklch(0_0_0_/_0.02)]">
       <div
         role="table"
         aria-label="Cargo list"
