@@ -1,0 +1,117 @@
+{
+  "app": {
+    "name": "Sarbon Dispatcher",
+    "tagline": "Move freight faster — with clearer eyes."
+  },
+  "nav": {
+    "dashboard": "Dashboard",
+    "cargo": "Cargo",
+    "myCargo": "My cargo",
+    "offers": "Offers",
+    "ratings": "Ratings",
+    "drivers": "Drivers",
+    "gps": "GPS tracking"
+  },
+  "header": {
+    "search": "Search cargo…",
+    "notifications": "Notifications",
+    "favorites": "Favorites",
+    "profile": "Profile",
+    "theme": {
+      "toggle": "Toggle theme",
+      "light": "Light",
+      "dark": "Dark",
+      "system": "System"
+    },
+    "language": "Language"
+  },
+  "page": {
+    "title": "All cargo",
+    "breadcrumb": {
+      "home": "Home",
+      "cargo": "All cargo"
+    },
+    "subtitle": "Available shipments in your dispatcher workspace"
+  },
+  "filters": {
+    "title": "Filters",
+    "reset": "Reset",
+    "apply": "Apply",
+    "from": "Pickup city",
+    "fromPlaceholder": "From",
+    "to": "Drop-off city",
+    "toPlaceholder": "To",
+    "transport": "Transport",
+    "transportPlaceholder": "Choose cargo type",
+    "weight": "Weight (t)",
+    "weightMin": "Min",
+    "weightMax": "Max",
+    "date": "Date",
+    "dateStart": "Start",
+    "dateEnd": "End",
+    "hasOffers": "Has offers",
+    "favoritesOnly": "Favorites",
+    "sort": {
+      "label": "Sort",
+      "newest": "Newest (by created at)",
+      "oldest": "Oldest",
+      "priceAsc": "Price ↑",
+      "priceDesc": "Price ↓"
+    },
+    "active": "Active filters",
+    "clearAll": "Clear all"
+  },
+  "table": {
+    "from": "Pickup",
+    "to": "Drop-off",
+    "price": "Price",
+    "cargo": "Cargo",
+    "transport": "Transport",
+    "customer": "Customer",
+    "actions": "Actions",
+    "favorite": "Add to favorites",
+    "share": "Share"
+  },
+  "pagination": {
+    "previous": "Previous",
+    "next": "Next",
+    "page": "Page",
+    "of": "of",
+    "show": "Show",
+    "perPage": "per page",
+    "results": "{from}–{to} of {total}"
+  },
+  "states": {
+    "loading": "Loading…",
+    "errorTitle": "Something went wrong",
+    "errorBody": "Couldn't load data. Try again in a moment.",
+    "retry": "Retry",
+    "emptyTitle": "No cargo found",
+    "emptyBody": "No matching cargo right now. Try adjusting filters."
+  },
+  "status": {
+    "SEARCHING_ALL": "Searching",
+    "ON_THE_WAY": "On the way",
+    "DELIVERED": "Delivered",
+    "CANCELLED": "Cancelled"
+  },
+  "cargo": {
+    "weight": "{w} t",
+    "volume": "{v} m³",
+    "ltl": "LTL",
+    "ftl": "FTL"
+  },
+  "footer": {
+    "useful": "Useful",
+    "distance": "Distance calculator",
+    "updates": "Release notes",
+    "contacts": "Contacts & rates",
+    "about": "About Sarbon",
+    "contactInfo": "Contact info",
+    "info": "Info",
+    "privacy": "Privacy policy",
+    "sitemap": "Sitemap",
+    "app": "Sarbon mobile app",
+    "rights": "© 2026 Sarbon. All rights reserved."
+  }
+}

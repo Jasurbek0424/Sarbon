@@ -1,0 +1,117 @@
+{
+  "app": {
+    "name": "Sarbon Dispatcher",
+    "tagline": "Yuklarni boshqaring — tezroq, aniqroq."
+  },
+  "nav": {
+    "dashboard": "Boshqaruv",
+    "cargo": "Yuklar",
+    "myCargo": "Mening yuklarim",
+    "offers": "Takliflar",
+    "ratings": "Reytinglar",
+    "drivers": "Haydovchilar",
+    "gps": "GPS kuzatuv"
+  },
+  "header": {
+    "search": "Yuk qidirish…",
+    "notifications": "Bildirishnomalar",
+    "favorites": "Sevimlilar",
+    "profile": "Profil",
+    "theme": {
+      "toggle": "Mavzuni almashtirish",
+      "light": "Yorug'",
+      "dark": "Tungi",
+      "system": "Tizim"
+    },
+    "language": "Til"
+  },
+  "page": {
+    "title": "Barcha yuklar",
+    "breadcrumb": {
+      "home": "Bosh sahifa",
+      "cargo": "Barcha yuklar"
+    },
+    "subtitle": "Dispatcher kabinetida mavjud yuklar ro'yxati"
+  },
+  "filters": {
+    "title": "Filtrlar",
+    "reset": "Tozalash",
+    "apply": "Qo'llash",
+    "from": "Yuklash shahri",
+    "fromPlaceholder": "Qayerdan",
+    "to": "Tushirish shahri",
+    "toPlaceholder": "Qayerga",
+    "transport": "Transport",
+    "transportPlaceholder": "Yuk turini tanlang",
+    "weight": "Og'irlik (t)",
+    "weightMin": "Min",
+    "weightMax": "Max",
+    "date": "Sana",
+    "dateStart": "Boshlanish",
+    "dateEnd": "Tugash",
+    "hasOffers": "Takliflari bor",
+    "favoritesOnly": "Sevimli",
+    "sort": {
+      "label": "Saralash",
+      "newest": "Yangi (yaratilgan sana bo'yicha)",
+      "oldest": "Eski",
+      "priceAsc": "Narx ↑",
+      "priceDesc": "Narx ↓"
+    },
+    "active": "Faol filtrlar",
+    "clearAll": "Hammasini tozalash"
+  },
+  "table": {
+    "from": "Qayerdan olish",
+    "to": "Qayerga",
+    "price": "Narx",
+    "cargo": "Yuk",
+    "transport": "Transport",
+    "customer": "Buyurtmachi",
+    "actions": "Amallar",
+    "favorite": "Sevimliga qo'shish",
+    "share": "Ulashish"
+  },
+  "pagination": {
+    "previous": "Oldingi",
+    "next": "Keyingi",
+    "page": "Sahifa",
+    "of": "/",
+    "show": "Ko'rsatish",
+    "perPage": "ta",
+    "results": "{from}–{to} / {total} natija"
+  },
+  "states": {
+    "loading": "Yuklanmoqda…",
+    "errorTitle": "Xatolik yuz berdi",
+    "errorBody": "Ma'lumotlarni yuklab bo'lmadi. Qaytadan urinib ko'ring.",
+    "retry": "Qayta urinish",
+    "emptyTitle": "Yuklar topilmadi",
+    "emptyBody": "Hozirda mos yuklar yo'q. Filtrlarni o'zgartirib ko'ring."
+  },
+  "status": {
+    "SEARCHING_ALL": "Qidirilmoqda",
+    "ON_THE_WAY": "Yo'lda",
+    "DELIVERED": "Yetkazildi",
+    "CANCELLED": "Bekor qilingan"
+  },
+  "cargo": {
+    "weight": "{w} t",
+    "volume": "{v} m³",
+    "ltl": "LTL",
+    "ftl": "FTL"
+  },
+  "footer": {
+    "useful": "Foydali",
+    "distance": "Masofani hisoblash",
+    "updates": "Versiyalar yangiliklari",
+    "contacts": "Kontaktlar va tariflar",
+    "about": "Sarbon tizimi haqida",
+    "contactInfo": "Kontakt ma'lumotlari",
+    "info": "Ma'lumot",
+    "privacy": "Maxfiylik siyosati",
+    "sitemap": "Sayt xaritasi",
+    "app": "Sarbon mobil ilovasi",
+    "rights": "© 2026 Sarbon. Barcha huquqlar himoyalangan."
+  }
+}

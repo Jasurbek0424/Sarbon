@@ -1,0 +1,117 @@
+{
+  "app": {
+    "name": "Sarbon Dispatcher",
+    "tagline": "Управляйте грузами — быстрее и точнее."
+  },
+  "nav": {
+    "dashboard": "Панель",
+    "cargo": "Грузы",
+    "myCargo": "Мои грузы",
+    "offers": "Предложения",
+    "ratings": "Рейтинги",
+    "drivers": "Водители",
+    "gps": "GPS-мониторинг"
+  },
+  "header": {
+    "search": "Поиск груза…",
+    "notifications": "Уведомления",
+    "favorites": "Избранное",
+    "profile": "Профиль",
+    "theme": {
+      "toggle": "Сменить тему",
+      "light": "Светлая",
+      "dark": "Тёмная",
+      "system": "Системная"
+    },
+    "language": "Язык"
+  },
+  "page": {
+    "title": "Все грузы",
+    "breadcrumb": {
+      "home": "Главная",
+      "cargo": "Все грузы"
+    },
+    "subtitle": "Список грузов в кабинете диспетчера"
+  },
+  "filters": {
+    "title": "Фильтры",
+    "reset": "Сбросить",
+    "apply": "Применить",
+    "from": "Город погрузки",
+    "fromPlaceholder": "Откуда",
+    "to": "Город разгрузки",
+    "toPlaceholder": "Куда",
+    "transport": "Транспорт",
+    "transportPlaceholder": "Выберите тип груза",
+    "weight": "Вес (т)",
+    "weightMin": "Мин",
+    "weightMax": "Макс",
+    "date": "Дата",
+    "dateStart": "Начало",
+    "dateEnd": "Конец",
+    "hasOffers": "Есть предложения",
+    "favoritesOnly": "Избранное",
+    "sort": {
+      "label": "Сортировка",
+      "newest": "Новые (по дате создания)",
+      "oldest": "Старые",
+      "priceAsc": "Цена ↑",
+      "priceDesc": "Цена ↓"
+    },
+    "active": "Активные фильтры",
+    "clearAll": "Очистить всё"
+  },
+  "table": {
+    "from": "Откуда",
+    "to": "Куда",
+    "price": "Цена",
+    "cargo": "Груз",
+    "transport": "Транспорт",
+    "customer": "Заказчик",
+    "actions": "Действия",
+    "favorite": "В избранное",
+    "share": "Поделиться"
+  },
+  "pagination": {
+    "previous": "Назад",
+    "next": "Вперёд",
+    "page": "Стр.",
+    "of": "из",
+    "show": "Показывать",
+    "perPage": "шт.",
+    "results": "{from}–{to} из {total}"
+  },
+  "states": {
+    "loading": "Загрузка…",
+    "errorTitle": "Произошла ошибка",
+    "errorBody": "Не удалось загрузить данные. Попробуйте снова.",
+    "retry": "Повторить",
+    "emptyTitle": "Грузы не найдены",
+    "emptyBody": "Подходящих грузов нет. Измените фильтры."
+  },
+  "status": {
+    "SEARCHING_ALL": "В поиске",
+    "ON_THE_WAY": "В пути",
+    "DELIVERED": "Доставлен",
+    "CANCELLED": "Отменён"
+  },
+  "cargo": {
+    "weight": "{w} т",
+    "volume": "{v} м³",
+    "ltl": "LTL",
+    "ftl": "FTL"
+  },
+  "footer": {
+    "useful": "Полезное",
+    "distance": "Расчёт расстояния",
+    "updates": "Обновления",
+    "contacts": "Контакты и тарифы",
+    "about": "О системе Sarbon",
+    "contactInfo": "Контактная информация",
+    "info": "Информация",
+    "privacy": "Политика конфиденциальности",
+    "sitemap": "Карта сайта",
+    "app": "Мобильное приложение Sarbon",
+    "rights": "© 2026 Sarbon. Все права защищены."
+  }
+}
